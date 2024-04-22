@@ -407,7 +407,7 @@ color: var(--dark-text-primary);
 .btn-outline{
     color: var(--dark-text-secondary);
     border: solid 0.1rem;
-    background-color: none;
+    background-color: transparent;
 }
 
 #toTop{
