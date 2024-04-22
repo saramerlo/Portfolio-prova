@@ -110,6 +110,11 @@ h3{
        }
    }
 
+.btn-xl{
+    border-radius: var(--border-lg);
+    padding: 1rem  8rem;
+}
+
 .btn-lg{
     padding: 1rem 2rem;
     border-radius: var(--border-lg);
@@ -372,6 +377,10 @@ color: var(--dark-text-primary);
     margin-top: -30rem;
 }
 
+#form-ridotto{
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
 /* project */
 #portfolio-page .bg-colorato h2{
     margin-top: 4rem;
