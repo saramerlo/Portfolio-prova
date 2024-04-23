@@ -343,9 +343,28 @@ footer{
     justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       }
+   }
+
 .socials{
-    gap:1rem;
+    gap:0.5rem;
+    justify-content: center;
+    padding-top: 1rem;
 }
+
+@media (min-width: 767px) {
+    .socials {
+        display: flex;
+        justify-content: end;
+        padding-top: 0;
+       }
+   }
+
 /* modal */
  
 .modal{
@@ -431,21 +450,22 @@ color: var(--dark-text-primary);
 }
 
 #toTop{
-    display: none;
-    text-decoration: none;
+    font-size: 20px;
+    border-radius: 3px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    overflow: hidden;
-    border: none;
-    background: var(--btn-dark);
-    opacity: 1;
-    z-index: 2;
-    border-radius: var(--border-sm);
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    text-align: center;
+    z-index: 10;
+    transition: opacity 300ms ease-in-out;
+    background-color: #464646;
 }
+
 
 #toTop img{
     padding: 0.5rem;
+    width: 35px;
 }
 
 .skill{
