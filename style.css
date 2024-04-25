@@ -119,6 +119,7 @@ h3{
 .btn{
     font-weight: var(--font-semibold);
     font-size: 1rem;
+    border-color: transparent;
 }
 
 @media (max-width: 767px) {
@@ -154,9 +155,23 @@ h3{
     color: var(--btn-dark-text)!important;
 }
 
+.btn-dark:hover{
+    background-color: #5b5b5b!important;
+}
+
+@media (min-width: 767px) {
+    .btn-dark{ 
+        margin-top: 2.5rem;
+       }
+   }
+
 .btn-light{
     background-color: var(--btn-light)!important;
     color: var(--btn-light-text)!important;
+}
+
+.btn-light:hover{
+    background-color: var(--dark-text-secondary)!important;
 }
 
 /* navbar */
@@ -177,7 +192,6 @@ h3{
 .navbar-nav{
     column-gap: 3rem;
 }
-
 
 /* inserisci un hover e active */
 
@@ -296,7 +310,17 @@ h3{
 
 .reviews{
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 767px) {
+    .reviews{
+        gap: 10rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 }
 
 .review{
@@ -304,7 +328,7 @@ h3{
 }
 
 .review::before {
-    content: open-quote; /* Aggiunge la virgoletta di apertura prima della citazione */
+    content: url(assets/icon/arrow.svg);
     position: absolute;
     top: 0.2em;
     left: -0.4em; /* Posiziona la virgoletta appena prima della citazione */
@@ -312,7 +336,7 @@ h3{
   }
   
 .review::after {
-    content: close-quote; /* Aggiunge la virgoletta di chiusura dopo la citazione */
+    content: url(assets/icon/arrow.svg);
     font-size: 5rem;
     position: absolute;
     top: 1.2em;
@@ -398,7 +422,9 @@ color: var(--dark-text-secondary);
 font-family: var(--secondary-font);
 color: var(--dark-text-primary);
 }
-
+.btn-close{
+    background-image: url(assets/icon/ph_x-bold.svg);
+}
 
 /* about me - page */
 
@@ -492,7 +518,7 @@ color: var(--dark-text-primary);
 
 .skill{
     color: var(--btn-dark-text);
-    background-color: #282828;
+    background-color: var(--dark-bg-primary);
     width: 3rem;
     aspect-ratio: 1/1;
     border-radius: var(--border-sm);
@@ -523,6 +549,3 @@ color: var(--dark-text-primary);
 }
 
 
-.btn-close{
-    background-image: url(assets/icon/ph_x-bold.svg);
-}
