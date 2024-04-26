@@ -76,7 +76,7 @@ p {
     font-size: 0.875rem;
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, label::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, label::selection, info::selection {
     color: var(--dark-bg-primary);
     background-color:var(--dark-text-primary);
   }
