@@ -383,26 +383,25 @@ h3{
 }
 
 .review::before {
-    content: url(assets/icon/arrow2.svg);
+    content: url(assets/icon/quote-open.svg);
     position: absolute;
-    top: -3em;
-    left: -3em; /* Posiziona la virgoletta appena prima della citazione */
+    top: -0.5em;
+    left: -2.5em; /* Posiziona la virgoletta appena prima della citazione */
 }
   
-/* .review::after {
+.review::after {
     content: url(assets/icon/quote-close.svg);
     position: absolute;
     bottom: -0.5em;
     right: -2em; 
-} */
-
+}
 
 @media (max-width: 767px) {
     .review::before {
-        content: url(assets/icon/arrow2.svg);
+        content: url(assets/icon/quote-open.svg);
         position: absolute;
-        top: -04em;
-        left: -1em; /* Posiziona la virgoletta appena prima della citazione */
+        top: -0.4em;
+        left: -1.5em; /* Posiziona la virgoletta appena prima della citazione */
     };
     .review::after {
         content: url(assets/icon/quote-close.svg);
