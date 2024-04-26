@@ -178,7 +178,6 @@ h3{
     background-color: var(--btn-dark)!important;
     color: var(--btn-dark-text)!important;
 }
-
 .btn-dark:hover{
     background-color: #5b5b5b!important;
 }
@@ -193,15 +192,6 @@ h3{
     background-color: var(--btn-light)!important;
     color: var(--btn-light-text)!important;
 }
-
-@media (min-width:992px) {
-    .cta{
-        background-color: var(--btn-light);
-        color: var(--btn-light-text)!important;
-        font-weight: var(--font-semibold);
-    }
-}
-
 .btn-light:hover{
     background-color: var(--dark-text-secondary)!important;
 }
@@ -774,6 +764,14 @@ h3{
 
 .cta{
     font-weight: var(--font-semibold);
+}
+
+@media (min-width:992px) {
+    .cta{
+        background-color: var(--btn-light);
+        color: var(--btn-light-text)!important;
+        font-weight: var(--font-semibold);
+    }
 }
 
 .btn-light:hover{
