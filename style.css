@@ -51,6 +51,12 @@ p {
     font-size: 0.875rem;
 }
 
+/* p strong {
+    background: transparent;
+    background-image: linear-gradient(#fff0 60%, #464646 0%);
+    font-weight: var(--font-semibold);
+} */
+
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, label::selection, info::selection {
     color: var(--dark-bg-primary);
     background-color:var(--dark-text-primary);
@@ -259,7 +265,7 @@ h3{
 }
 
 /* about me */
-#aboutme, #features, #review, #skill, #social, #portfolio-page, #project,#project-details, #gallery {
+#aboutme, #features, #review, #skill, #social, #portfolio-page, #project,#project-details, #gallery, #contact-info {
     background-color: var(--dark-bg-secondary);
 }
 
@@ -354,7 +360,7 @@ h3{
     content: url(assets/icon/quote-open.svg);
     position: absolute;
     top: -0.5em;
-    left: -2.5em; /* Posiziona la virgoletta appena prima della citazione */
+    left: -2.5em; 
 }
   
 .review::after {
@@ -369,7 +375,7 @@ h3{
         content: url(assets/icon/quote-open.svg);
         position: absolute;
         top: -0.4em;
-        left: -1.5em; /* Posiziona la virgoletta appena prima della citazione */
+        left: -1.5em; 
     };
     .review::after {
         content: url(assets/icon/quote-close.svg);
@@ -529,6 +535,13 @@ color: var(--dark-text-primary);
     }
 }
 
+@media (min-width: 767px){
+    .details{
+        flex-direction: column;
+    }
+}
+
+
 #toTop{
     font-size: 20px;
     border-radius: 3px;
@@ -577,4 +590,13 @@ color: var(--dark-text-primary);
     .img-space-top{
         padding-top: 2rem;
     }
+}
+
+.social{
+    color: var(--btn-dark-text);
+    background-color: var(--dark-bg-primary);
+    border-radius: var(--border-sm);
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem ;
 }
