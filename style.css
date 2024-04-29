@@ -158,8 +158,23 @@ h3{
     background-color: var(--btn-dark)!important;
     color: var(--btn-dark-text)!important;
 }
-.btn-dark:hover{
+
+.btn-darkest{
+    background-color: var(--dark-bg-primary);
+    color: var(--btn-dark-text);
+    align-items: center;
+    display: flex;
+}
+
+.btn-dark:hover, .btn-darkest:hover{
     background-color: #5b5b5b!important;
+    color: var(--btn-dark-text);
+}
+
+.social-group{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 @media (min-width: 767px) {
@@ -541,7 +556,6 @@ color: var(--dark-text-primary);
     }
 }
 
-
 #toTop{
     font-size: 20px;
     border-radius: 3px;
@@ -590,13 +604,4 @@ color: var(--dark-text-primary);
     .img-space-top{
         padding-top: 2rem;
     }
-}
-
-.social{
-    color: var(--btn-dark-text);
-    background-color: var(--dark-bg-primary);
-    border-radius: var(--border-sm);
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 1.5rem ;
 }
