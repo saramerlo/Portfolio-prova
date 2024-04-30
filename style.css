@@ -217,7 +217,7 @@ h3{
 
 /* hero */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/fire-prova2.jpg);
     background-size: cover;
     background-position: center;
     padding-bottom: 2rem;
