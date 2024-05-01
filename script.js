@@ -14,4 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// btn backto top nascosto
+document.getElementById('toTop').style.display = 'none';
+// comparsa btn backto top
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollPosition > 200) {
+        document.getElementById('toTop').style.display = 'inline';
+    } else {
+        document.getElementById('toTop').style.display = 'none';
+    }
+});
+
 
