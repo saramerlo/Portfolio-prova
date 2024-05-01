@@ -223,6 +223,13 @@ h3{
     column-gap: 3rem;
 }
 
+#navbarSupportedContent {
+    transition: all 0.5s ease;
+}
+#navbarSupportedContent.show {
+    top: 0;
+}
+
 /* hero */
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/hero_bg.webp);
