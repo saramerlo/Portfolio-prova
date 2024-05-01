@@ -369,7 +369,6 @@ h3{
 .info{
     color:var(--dark-bg-tertiary);
     font-weight: var(--font-semibold);
-    background-image: url(assets/icon/circle.svg);
     background-repeat: no-repeat;
 }
 
