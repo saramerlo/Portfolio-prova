@@ -26,3 +26,11 @@ window.addEventListener('scroll', function() {
         document.getElementById('toTop').style.display = 'none';
     }
 });
+
+
+
+ // Aggiungi un listener per l'evento di invio del modulo
+ document.getElementById("form").addEventListener("submit", function() {
+    // Resetta il modulo dopo averlo inviato
+    resetForm();
+});

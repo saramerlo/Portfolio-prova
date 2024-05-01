@@ -1,3 +1,5 @@
+<!-- php che non funzia  -->
+
 <?php
 // Verifica se il metodo di richiesta è POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
