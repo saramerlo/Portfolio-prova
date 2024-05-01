@@ -20,11 +20,9 @@ document.getElementById('toTop').style.display = 'none';
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollPosition > 200) {
+    if (scrollPosition > 400) {
         document.getElementById('toTop').style.display = 'inline';
     } else {
         document.getElementById('toTop').style.display = 'none';
     }
 });
-
-
