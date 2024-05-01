@@ -197,6 +197,14 @@ h3{
     background-color: var(--dark-text-secondary)!important;
 }
 
+@media (min-width:992px) {
+    .cta{
+        background-color: var(--btn-light);
+        color: var(--btn-light-text)!important;
+        font-weight: var(--font-semibold);
+    }
+}
+
 /* navbar */
 .navbar{
     background-color: var(--navbar-bg);
@@ -217,7 +225,7 @@ h3{
 
 /* hero */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/fire-prova2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/hero_bg.webp);
     background-size: cover;
     background-position: center;
     padding-bottom: 2rem;
@@ -580,8 +588,9 @@ color: var(--dark-text-primary);
 .skill{
     color: var(--btn-dark-text);
     background-color: var(--dark-bg-primary);
-    width: 3rem;
-    aspect-ratio: 1/1;
+    height: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-radius: var(--border-sm);
     align-items: center;
     justify-content: center;
