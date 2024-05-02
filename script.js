@@ -28,7 +28,6 @@ window.addEventListener('scroll', function() {
 });
 
 // filtri
-
 document.addEventListener("DOMContentLoaded", function() {
     const filterButtons = document.querySelectorAll(".btn-filter");
     const projects = document.querySelectorAll(".col-md-4");
@@ -46,8 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const category = this.getAttribute("data-category");
 
             projects.forEach(project => {
-                const projectId = project.getAttribute("id");
-                if (category === "all" || category === projectId) {
+                if (category === "all" || project.classList.contains("category-" + category)) {
                     project.style.display = "block";
                 } else {
                     project.style.display = "none";
