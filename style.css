@@ -548,7 +548,7 @@ color: var(--dark-text-primary);
     font-weight: var(--font-normal);
 }
 
-.btn-filter:active, .btn-filter.active:focus{
+.btn-filter:active, .btn-filter.active:focus, #filter .active{
     background-color: var(--btn-light)!important;
     color: var(--btn-light-text)!important;
     font-weight: var(--font-semibold);
