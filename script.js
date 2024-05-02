@@ -27,10 +27,38 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// filtri
 
+document.addEventListener("DOMContentLoaded", function() {
+    const filterButtons = document.querySelectorAll(".btn-filter");
+    const projects = document.querySelectorAll(".col-md-4");
 
- // Aggiungi un listener per l'evento di invio del modulo
- document.getElementById("form").addEventListener("submit", function() {
-    // Resetta il modulo dopo averlo inviato
-    resetForm();
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function() {
+             // Rimuovi la classe 'active' da tutti i pulsanti di filtro
+             filterButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            // Aggiungi la classe 'active' al pulsante cliccato
+            this.classList.add("active");
+
+            const category = this.getAttribute("data-category");
+
+            projects.forEach(project => {
+                const projectId = project.getAttribute("id");
+                if (category === "all" || category === projectId) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+            });
+        });
+    });
 });
+
+//  // Aggiungi un listener per l'evento di invio del modulo
+//  document.getElementById("form").addEventListener("submit", function() {
+//     // Resetta il modulo dopo averlo inviato
+//     resetForm();
+// });
