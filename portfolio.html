@@ -60,143 +60,142 @@
     <div class="container pb-5" id="filter">
       <div class="row justify-content-center">
         <div class="filter-group col-lg-8">
-          <button type="button" class="btn btn-dark btn-filter rounded-pill">Mostra tutto</button>
-          <button type="button" class="btn btn-dark btn-filter rounded-pill">Brand identity</button>
-          <button type="button" class="btn btn-dark btn-filter rounded-pill">Editorial</button>
-          <button type="button" class="btn btn-dark btn-filter rounded-pill">Web Design</button>
-          <button type="button" class="btn btn-dark btn-filter rounded-pill">Fotografia</button>
+          <button type="button" class="btn btn-dark btn-filter rounded-pill" data-category="all">Mostra tutto</button>
+          <button type="button" class="btn btn-dark btn-filter rounded-pill" data-category="brand">Brand identity</button>
+          <button type="button" class="btn btn-dark btn-filter rounded-pill" data-category="web">Web Design</button>
+          <button type="button" class="btn btn-dark btn-filter rounded-pill" data-category="fotografia">Fotografia</button>
+          <button type="button" class="btn btn-dark btn-filter rounded-pill" data-category="altro">Altro</button>
         </div>
       </div>
     </div>
   </header>
 
-<!-- wip alt card progetto -->
-      <div class="container slided-top pt-5">
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <a href="portfolio/feffarkhorn23.html">
-              <div class="card ">
-                <img src="assets/project/preview/Feffark-preview.webp" class="card-img-top " alt="Violinista che suona al Feffarkhorn">
-                <div class="project-name"> 
-                  <h3>Feffarkhorn</h3>
-                  <p>Fotografia</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <a href="portfolio/surtr.html">
-              <div class="card">
-                <img src="assets/project/preview/surtur-preview.webp" class="card-img-top" alt="Surtr Logo">
-                <div class="project-name"> 
-                  <h3>Surtr Halls</h3>
-                  <p>Brand identity</p>
-                </div>
-              </div>
-           </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <a href="portfolio/lunasage.html">
-              <div class="card">
-                <img src="assets/project/preview/LunaSage-preview.webp" class="card-img-top" alt="Luna and Sage Logo">
-                <div class="project-name"> 
-                  <h3>Luna & Sage</h3>
-                  <p>Brand identity</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <a href="portfolio/feffarkhorn23.html">
-              <div class="card ">
-                <img src="assets/project/preview/vintage-merch-preview.webp" class="card-img-top " alt="magliette rock vintage">
-                <div class="project-name"> 
-                  <h3>Vintage Tees</h3>
-                  <p>Merchandising</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
+    <div class="container slided-top pt-5">
+      <div class="row">
+        <div class="col-md-4 mb-4"  id="fotografia">
+          <a href="portfolio/feffarkhorn23.html"  aria-label="vai al progetto Feffarkhorn">
             <div class="card">
-              <a href="portfolio/outro.html">
-                <img src="assets/project/preview/outro-preview.webp" class="card-img-top" alt="telefoni che mostrano l'app Outro">
-                <div class="project-name"> 
-                  <h3>Outro</h3>
-                  <p>Brand Identity & <br> UI design</p>
-                </div>
+              <img src="assets/project/preview/Feffark-preview.webp" class="card-img-top " alt="Violinista che suona al Feffarkhorn">
+              <div class="project-name"> 
+                <h3>Feffarkhorn</h3>
+                <p>Fotografia</p>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="altro">
+          <a href="portfolio/feffarkhorn23.html"  aria-label="vai al progetto Vintage tees">
             <div class="card">
-              <a href="portfolio/larsgrape.html">
-                <img src="assets/project/preview/lars-grape-preview.webp" class="card-img-top" alt="Logo Lars Grape Guitars">
-                <div class="project-name"> 
-                  <h3>Lars Grape Guitars</h3>
-                  <p>Brand Identity</p>
-                </div>
+              <img src="assets/project/preview/vintage-merch-preview.webp" class="card-img-top " alt="magliette rock vintage">
+              <div class="project-name"> 
+                <h3>Vintage Tees</h3>
+                <p>Merchandising</p>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <a href="portfolio/feffarkhorn23.html">
-              <div class="card ">
-                <img src="assets/project/preview/lovecraft-preview.webp" class="card-img-top " alt="illustrazione di lovecraft in doppia esposizione">
-                <div class="project-name"> 
-                  <h3>Lovecraft</h3>
-                  <p>Cover Design</p>
-                </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="fotografia">
+          <div class="card">
+            <a href="portfolio/larsgrape-photography.html" aria-label="vai al progetto Lars Grape Fotografia">
+              <img src="assets/project/preview/lars-guitars-photo-preview.webp" class="card-img-top" alt="chitarra">
+              <div class="project-name"> 
+                <h3>Lars Grape Guitars</h3>
+                <p>Fotografia</p>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="altro">
+          <div class="card">
+            <a href="portfolio/feffarkhorn23.html" aria-label="vai al progetto Social moto Gp">
+              <img src="assets/project/preview/moto-gp-social-preview.webp" class="card-img-top " alt="instagram post moto">
+              <div class="project-name"> 
+                <h3>Moto Gp</h3>
+                <p>Social Media</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="web">
+          <div class="card">
+            <a href="portfolio/outro.html" aria-label="vai al progetto Outro">
+              <img src="assets/project/preview/outro-preview.webp" class="card-img-top" alt="telefoni che mostrano l'app Outro">
+              <div class="project-name"> 
+                <h3>Outro</h3>
+                <p>Brand Identity & <br> UI design</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="brand">
+          <div class="card">
+            <a href="portfolio/lndnfields.html" aria-label="vai al progetto Lndn Fields">
+              <img src="assets/project/preview/lndn-preview.webp" class="card-img-top" alt="Lndn Fields Logo">
+              <div class="project-name"> 
+                <h3>Lndn Fields</h3>
+                <p>Brand Identity</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="brand">
+          <a href="portfolio/surtr.html"  aria-label="vai al progetto Surtr">
             <div class="card">
-              <a href="portfolio/feffarkhorn23.html">
-                <img src="assets/project/preview/oreirea-preview.webp" class="card-img-top" alt="logo Oreira">
-                <div class="project-name"> 
-                  <h3>Oreira</h3>
-                  <p>Brand Identity</p>
-                </div>
+              <img src="assets/project/preview/surtur-preview.webp" class="card-img-top" alt="Surtr Logo">
+              <div class="project-name"> 
+                <h3>Surtr Halls</h3>
+                <p>Brand identity</p>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="brand">
+          <div class="card">
+            <a href="portfolio/feffarkhorn23.html" aria-label="vai al progetto Oreira">
+              <img src="assets/project/preview/oreirea-preview.webp" class="card-img-top" alt="logo Oreira">
+              <div class="project-name"> 
+                <h3>Oreira</h3>
+                <p>Brand Identity</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="altro">
+          <a href="portfolio/feffarkhorn23.html" aria-label="vai al progetto Lovecraft">
             <div class="card">
-              <a href="portfolio/larsgrape-photography.html">
-                <img src="assets/project/preview/lars-guitars-photo-preview.webp" class="card-img-top" alt="chitarra">
-                <div class="project-name"> 
-                  <h3>Lars Grape Guitars</h3>
-                  <p>Fotografia</p>
-                </div>
+              <img src="assets/project/preview/lovecraft-preview.webp" class="card-img-top " alt="illustrazione di lovecraft in doppia esposizione">
+              <div class="project-name"> 
+                <h3>Lovecraft</h3>
+                <p>Cover Design</p>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="brand">
+          <a href="portfolio/lunasage.html" aria-label="vai al progetto Luna and Sage">
             <div class="card">
-              <a href="portfolio/lndnfields.html">
-                <img src="assets/project/preview/lndn-preview.webp" class="card-img-top" alt="Lndn Fields Logo">
-                <div class="project-name"> 
-                  <h3>Lndn Fields</h3>
-                  <p>Brand Identity</p>
-                </div>
+              <img src="assets/project/preview/LunaSage-preview.webp" class="card-img-top" alt="Luna and Sage Logo">
+              <div class="project-name"> 
+                <h3>Luna & Sage</h3>
+                <p>Brand identity</p>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <a href="portfolio/feffarkhorn23.html">
-                <img src="assets/project/preview/moto-gp-social-preview.webp" class="card-img-top " alt="instagram post moto">
-                <div class="project-name"> 
-                  <h3>Moto Gp</h3>
-                  <p>Social Media</p>
-                </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4" id="brand">
+          <div class="card">
+            <a href="portfolio/larsgrape.html" aria-label="vai al progetto Lars Grape">
+              <img src="assets/project/preview/lars-grape-preview.webp" class="card-img-top" alt="Logo Lars Grape Guitars">
+              <div class="project-name"> 
+                <h3>Lars Grape Guitars</h3>
+                <p>Brand Identity</p>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
-    </section>  
+    </div>
+  </section>  
 
  <!-- form ridotto-->
   <section id="form-ridotto">
@@ -235,7 +234,7 @@
   </footer>
     
   <!-- torna su -->
-  <a href="#" id="toTop"  aria-label="Scorri in alto" style="display: inline;">
+  <a href="#" id="toTop"  aria-label="Scorri in alto">
     <img src="assets/icon/arrow.svg" class="img-fluid" alt="back to top arrow">
   </a>
       
