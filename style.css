@@ -613,10 +613,6 @@ color: var(--dark-text-primary);
     gap: 0.5rem;
 }
 
-.btn svg{
-    margin: 0 1rem;
-}
-
 @media (max-width: 767px){
     .img-space-bottom{
         padding-bottom: 2rem;
