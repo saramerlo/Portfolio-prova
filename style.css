@@ -508,6 +508,33 @@ color: var(--dark-text-primary);
     background-color: var(--dark-bg-tertiary);
 }
 
+.hand-ref{
+    position: relative;
+}
+
+.hand{
+    position: absolute;
+    bottom: -0.4rem;
+    right: 0.5rem;
+}
+.hand img{
+    width: 4rem;
+}
+
+@media (min-width: 767px){
+    .hand{
+        position: absolute;
+        bottom: -1rem;
+        right: -1.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .hand img{
+        width: 7rem;
+    }
+}
+
 /* portfolio - page*/
 .bg-colorato{
     background-color: var(--dark-bg-primary);
