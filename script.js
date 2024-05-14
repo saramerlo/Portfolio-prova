@@ -55,6 +55,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// lazy load
+document.addEventListener("DOMContentLoaded", function(){
+    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+    if ("IntersectionObserver" in window) {
+        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.classList.remove("lazy");
+                    lazyImage.style.visibility = "visible"; // Mostra l'immagine
+                    lazyImage.style.opacity = 1; // Imposta l'opacità a 1 per renderla visibile gradualmente
+                    lazyImageObserver.unobserve(lazyImage);
+                }
+            });
+        });
+
+        lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+        });
+    } else {
+        // Gestione fallback per browser senza Intersection Observer
+    }
+});
+
 //  // Aggiungi un listener per l'evento di invio del modulo
 //  document.getElementById("form").addEventListener("submit", function() {
 //     // Resetta il modulo dopo averlo inviato
