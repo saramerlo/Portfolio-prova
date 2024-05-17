@@ -56,7 +56,7 @@ p {
     font-weight: var(--font-semibold);
 } */
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, label::selection, info::selection, .disclaimer::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, label::selection {
     color: var(--dark-bg-primary);
     background-color:var(--dark-text-primary);
   }
@@ -382,39 +382,6 @@ h3{
     }
 }
 
-/* .review{
-    position: relative;
-}
-
-.review::before {
-    content: url(assets/icon/quote-open.svg);
-    position: absolute;
-    top: -0.5em;
-    left: -2.5em; 
-}
-  
-.review::after {
-    content: url(assets/icon/quote-close.svg);
-    position: absolute;
-    bottom: -0.5em;
-    right: -2em; 
-}
-
-@media (max-width: 767px) {
-    .review::before {
-        content: url(assets/icon/quote-open.svg);
-        position: absolute;
-        top: -0.4em;
-        left: -1.5em; 
-    };
-    .review::after {
-        content: url(assets/icon/quote-close.svg);
-        position: absolute;
-        bottom: -0.5em;
-        right: -1em; 
-    }
-} */
-
 /* form */
 .form{
     display: flex;
@@ -636,11 +603,8 @@ color: var(--dark-text-primary);
     .img-space-bottom{
         padding-bottom: 2rem;
     }
-}
-
-@media (max-width: 767px){
     .img-space-top{
-        padding-top: 2rem;
+    padding-top: 2rem;
     }
 }
 
@@ -689,4 +653,8 @@ img {
 
 img[data-src] {
     visibility: hidden;
+}
+
+video {
+object-fit: cover; /* Assicurati che il video si adatti all'area disponibile */
 }
