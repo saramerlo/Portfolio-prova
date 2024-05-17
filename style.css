@@ -658,3 +658,73 @@ img[data-src] {
 video {
 object-fit: cover; /* Assicurati che il video si adatti all'area disponibile */
 }
+
+/* prova breadcrumbs */
+
+.breadcrumb-item{
+    background-color: var(--dark-bg-secondary)!important;
+    color: var(--dark-text-secondary)!important; 
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: var(--font-semibold);
+    font-family: var(--secondary-font);
+ }
+ .breadcrumb-item.active {
+    background-color: var(--dark-bg-secondary)!important;
+     padding-left: 2rem;
+     padding-right: 1rem;
+     font-weight: var(--font-normal);
+ }
+ ol a {
+     text-decoration: none;
+     color: var(--dark-text-secondary); 
+ }
+ .breadcrumb-item {
+     position: relative;
+     padding-left: 20px; /* Spazio a sinistra per l'immagine della freccia */
+   }
+   
+ .breadcrumb-item::after{
+     content: '';
+     position: absolute;
+     right: -1.1rem;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 1.3em 0 1.3em 1.3em; /* Dimensioni della freccia */
+     border-color: transparent transparent transparent var(--dark-bg-secondary); /* Colore della freccia */
+     z-index: 1;
+    }
+ 
+ .breadcrumb-item.active::before, .breadcrumb-item.active::after {
+   content: none; /* Rimuovi la freccia per l'elemento attivo */
+ }
+ 
+ .breadcrumb-item.active::before {
+     content: '';
+     position: absolute;
+     left: 0rem; /* Regola la posizione per allineare correttamente il bordo con il contenuto */
+     top: calc(50% - 1.3em); /* Centra verticalmente il triangolo */
+     width: 0;
+     height: 0;
+     border-top: 20px solid transparent;
+     border-bottom: 20px solid transparent;
+     border-left: 20px solid var(--dark-bg-primary);
+ }
+  
+ .breadcrumb-item.active::after{
+    content: '';
+    position: absolute;
+    right: -1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1.3em 0 1.3em 1.3em; /* Dimensioni della freccia */
+    border-color: transparent transparent transparent var(--dark-bg-secondary); /* Colore della freccia */
+    z-index: 1;
+   }
+
