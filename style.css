@@ -125,12 +125,17 @@ h3{
     border-color: transparent;
 }
 
+
+.btn-xl {
+padding: 1rem 8rem;
+}
+
 @media (max-width: 767px) {
     .btn {
         width: 100%;
        }
     .btn-xl{
-        border-radius: var(--border-lg);
+     padding: 0.5rem 8rem;
     }
     .btn-filter{
         width: auto!important;
@@ -139,12 +144,6 @@ h3{
         justify-content: center;
     }
 }
-
-@media (min-width: 767px) {
-    .btn-xl {
-        padding: 1rem  8rem;
-       }
-   }
 
 .btn-lg{
     padding: 1rem 2rem;
