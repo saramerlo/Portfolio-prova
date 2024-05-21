@@ -503,7 +503,7 @@ color: var(--dark-text-primary);
 /* portfolio - page */
 .bg-colorato{
     background-color: var(--dark-bg-primary);
-    padding: 2rem;
+    padding-top: 2rem;
     padding-bottom: 15rem;
     margin-top: -7rem;
 }
