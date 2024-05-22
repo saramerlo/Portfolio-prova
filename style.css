@@ -33,6 +33,9 @@
 body{
     background-color: var(--dark-bg-primary);
 }
+h1, h2, h3, h4, h5, h6, p {
+    text-wrap: balance;
+}
 
 h2, h3, h4, h5, h6{
     font-family: var(--secondary-font);
@@ -116,6 +119,7 @@ h3{
 
 .title{
     flex-flow: column;
+    padding-top:5rem;
 }
 
 /* btn */
