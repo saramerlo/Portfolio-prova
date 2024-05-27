@@ -263,7 +263,7 @@ padding: 1rem 8rem;
 
 .hero-content  {
     color: var(--hero-text);
-    font-family: var(--primary-font);
+    font-family: var(--primary-font)!important;
 }
 
 .hero-title{
