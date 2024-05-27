@@ -465,8 +465,25 @@ color: var(--dark-text-primary);
     background-image: url("assets/icon/ph_x-bold.svg");
 }
 
-/* about me - page */
+/* modal foto */
+.photo-modal .modal-body {
+padding: 0;
+}
 
+.photo-modal .modal-content {
+background-color: transparent;
+border: none;
+position:relative;}
+
+.photo-modal .modal-header {
+position: absolute;
+top: 0.5rem;
+right: 1.3rem;
+z-index: 999;
+border: none;
+}
+
+/* about me - page */
 #aboutme-page, #aboutme-portfolio{
     background-color: var(--dark-bg-primary);
 }
