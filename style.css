@@ -477,8 +477,8 @@ position:relative;}
 
 .photo-modal .modal-header {
 position: absolute;
-top: 0.5rem;
-right: 1.3rem;
+/* top: 0.5rem; */
+right: 0.5rem;
 z-index: 999;
 border: none;
 }
