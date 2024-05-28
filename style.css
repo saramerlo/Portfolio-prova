@@ -287,8 +287,14 @@ padding: 1rem 8rem;
 }
 
 .page-section-start{
-    padding-top: calc(4.5rem + 80px);
+    padding-top: calc(2.5rem + 80px);
     padding-bottom: 3rem;
+}
+
+@media (min-width: 767px){
+.page-section-start{
+    padding-top: calc(4rem + 80px);
+    }
 }
 
 @media (min-width: 1200px){
@@ -297,7 +303,7 @@ padding: 1rem 8rem;
         padding-bottom: 5rem;
     }
     .page-section-start{
-        padding-top: calc(6rem + 80px);
+        padding-top: calc(5rem + 80px);
         padding-bottom: 5rem;
     }
 }
