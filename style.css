@@ -191,6 +191,9 @@ padding: 1rem 8rem;
     }   
    }
 
+.social-group img{
+padding: 0 2rem 2rem 2rem;
+}
 .btn-light {
     background-color: var(--btn-light)!important;
     color: var(--btn-light-text)!important;
