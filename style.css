@@ -463,6 +463,10 @@ font-family: var(--primary-font);
 color: var(--dark-text-secondary);
 }
 
+#gallery{
+    cursor: zoom-in;
+}
+
 .modal-content{
     background-color: var(--dark-bg-secondary);
 }
