@@ -81,8 +81,13 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-//  // Aggiungi un listener per l'evento di invio del modulo
-//  document.getElementById("form").addEventListener("submit", function() {
-//     // Resetta il modulo dopo averlo inviato
-//     resetForm();
-// });
+document.querySelectorAll('#gallery img').forEach((img, index) => {
+  console.log(`Image found: ${img.src}, Index: ${index}`);
+  img.addEventListener('click', () => {
+    const carousel = document.querySelector('#galleryCarousel');
+    console.log(`Carousel element: ${carousel}`);
+    const carouselInstance = new bootstrap.Carousel(carousel);
+    console.log(`Going to slide: ${index}`);
+    carouselInstance.to(index); // Vai allo slide corretto
+  });
+}); 
