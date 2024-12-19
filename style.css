@@ -797,3 +797,11 @@ object-fit: cover; /* Assicurati che il video si adatti all'area disponibile */
       max-width: 25%;
     }
 }
+
+  .custom-size {
+    max-width: 45%; /* Larghezza ridotta */
+    margin: 0 auto; /* Centrare l'immagine */
+    display: block; /* Necessario per margin auto */
+  }
+
+  
