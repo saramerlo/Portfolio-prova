@@ -485,7 +485,7 @@ padding: 0;
 }
 
 .photo-modal .modal-content {
-background-color: transparent;
+/* background-color: transparent; */
 border: none;
 position:relative;}
 
