@@ -759,10 +759,6 @@ object-fit: cover; /* Assicurati che il video si adatti all'area disponibile */
     z-index: 1;
    }
 
-.zoom{
-    cursor: pointer;
-}
-
 /* .no-transition .modal-dialog {
     transition: none !important;
   }
