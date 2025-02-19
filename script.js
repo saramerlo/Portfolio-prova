@@ -54,6 +54,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+// animation
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 600, // Durata animazione in ms
+      easing: "ease-in-out", // Tipo di animazione
+      once: true, // Se true, l'animazione avviene solo una volta
+    });
+  });
 
 // lazy load
 document.addEventListener("DOMContentLoaded", function(){
