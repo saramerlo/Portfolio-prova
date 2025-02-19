@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ease: "power2.out",
         scrollTrigger: {
             trigger: ".scrollstart",
-            markers:true, 
+            // markers:true, 
             start: "top 85%", // L'animazione parte quando il top della sezione entra nell'85% della viewport
             toggleActions: "play none none none",
             once: true, // Assicura che l'animazione non si ripeta quando si torna su
