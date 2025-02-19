@@ -113,11 +113,11 @@ document.addEventListener("DOMContentLoaded", function () {
         stagger: 0.2,
         ease: "power2.out",
         scrollTrigger: {
-            trigger: ".container", 
+            trigger: ".scrollstart",
+            markers:true, 
             start: "top 85%", // L'animazione parte quando il top della sezione entra nell'85% della viewport
             toggleActions: "play none none none",
             once: true, // Assicura che l'animazione non si ripeta quando si torna su
         },
     });
 });
-
