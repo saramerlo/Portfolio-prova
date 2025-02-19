@@ -99,3 +99,25 @@ document.querySelectorAll('#gallery img').forEach((img, index) => {
     carouselInstance.to(index); // Vai allo slide corretto
   });
 }); 
+
+
+// gallery animation
+
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".project-card", {
+        opacity: 0,
+        y: 50, 
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".container", 
+            start: "top 85%", // L'animazione parte quando il top della sezione entra nell'85% della viewport
+            toggleActions: "play none none none",
+            once: true, // Assicura che l'animazione non si ripeta quando si torna su
+        },
+    });
+});
+
