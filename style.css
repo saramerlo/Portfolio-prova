@@ -321,7 +321,7 @@ padding: 1rem 8rem;
   /* Applicare l'animazione al tuo elemento */
   .header-arrow {
     display: inline-block;
-    animation: bounce 3s infinite 1s; /* 3s di durata, con ritardo di 1s */
+    animation: bounce 2s infinite 1s; /* 3s di durata, con ritardo di 1s */
   }
 
 /* about me */
