@@ -813,3 +813,6 @@ object-fit: cover; /* Assicurati che il video si adatti all'area disponibile */
     }
 }
   
+  .container{
+    overflow: hidden;
+  }
