@@ -813,6 +813,6 @@ object-fit: cover; /* Assicurati che il video si adatti all'area disponibile */
     }
 }
   
-  .container{
+#aboutme .container, #aboutme-page .container, #skill .container, #contact-info .container, #form-ridotto .container{
     overflow: hidden;
-  }
+}
