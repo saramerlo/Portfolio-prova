@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stagger: 0.2, // Ritardo tra gli elementi
         ease: "power2.out",
         scrollTrigger: {
-            markers:true, 
+            // markers:true, 
             trigger: ".animate-fade-up",
             start: "top 85%", // L'animazione parte quando l'elemento entra nel 85% della viewport
             toggleActions: "play none none none",
