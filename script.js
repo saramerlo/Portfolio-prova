@@ -54,14 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-// animation
-document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({
-      duration: 600, // Durata animazione in ms
-      easing: "ease-in-out", // Tipo di animazione
-      once: true, // Se true, l'animazione avviene solo una volta
-    });
-  });
+
 
 // lazy load
 document.addEventListener("DOMContentLoaded", function(){
@@ -119,5 +112,52 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleActions: "play none none none",
             once: true, // Assicura che l'animazione non si ripeta quando si torna su
         },
+    });
+    document.querySelectorAll(".animate-fade-up").forEach((element, index) => {
+        gsap.from(element, {
+            opacity: 0,
+            y: 50,
+            duration: 0.8,
+            ease: "power2.out",
+            delay: index * 0.1, // Ritardo progressivo (effetto a cascata)
+            scrollTrigger: {
+                trigger: element,
+                start: "top 85%",
+                toggleActions: "play none none none",
+                once: true,
+            },
+        });
+    });
+
+    document.querySelectorAll(".animate-fade-right").forEach((element, index) => {
+        gsap.from(element, {
+            opacity: 0,
+            x: 100,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".animate-fade-right",
+                start: "top 85%",
+                toggleActions: "play none none none",
+                once: true,
+            },
+        });
+    });
+
+    document.querySelectorAll(".animate-fade-left").forEach((element, index) => {
+        gsap.from(element, {
+        opacity: 0,
+        y: 50, 
+        duration: 0.8,
+        stagger: 0.2, // Ritardo tra gli elementi
+        ease: "power2.out",
+        scrollTrigger: {
+            markers:true, 
+            trigger: ".animate-fade-up",
+            start: "top 85%", // L'animazione parte quando l'elemento entra nel 85% della viewport
+            toggleActions: "play none none none",
+            once: true, // L'animazione avviene solo una volta
+            },
+        });
     });
 });
