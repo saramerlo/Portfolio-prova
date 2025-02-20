@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
             duration: 1,
             ease: "power2.out",
             scrollTrigger: {
-                trigger: ".animate-fade-right",
+                trigger: element,
                 start: "top 85%",
                 toggleActions: "play none none none",
                 once: true,
@@ -147,13 +147,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".animate-fade-left").forEach((element, index) => {
         gsap.from(element, {
         opacity: 0,
-        x: -100,
+        y: 50, 
         duration: 0.8,
         stagger: 0.2, // Ritardo tra gli elementi
         ease: "power2.out",
         scrollTrigger: {
             // markers:true, 
-            trigger: ".animate-fade-left",
+            trigger: element,
             start: "top 85%", // L'animazione parte quando l'elemento entra nel 85% della viewport
             toggleActions: "play none none none",
             once: true, // L'animazione avviene solo una volta
