@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ease: "power2.out",
         scrollTrigger: {
             // markers:true, 
-            trigger: ".animate-fade-up",
+            trigger: ".animate-fade-left",
             start: "top 85%", // L'animazione parte quando l'elemento entra nel 85% della viewport
             toggleActions: "play none none none",
             once: true, // L'animazione avviene solo una volta
