@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".animate-fade-left").forEach((element, index) => {
         gsap.from(element, {
         opacity: 0,
-        y: 50, 
+        x: -100, 
         duration: 0.8,
         stagger: 0.2, // Ritardo tra gli elementi
         ease: "power2.out",
