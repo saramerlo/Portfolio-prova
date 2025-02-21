@@ -57,28 +57,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // lazy load
-document.addEventListener("DOMContentLoaded", function(){
-    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+document.addEventListener("DOMContentLoaded", function() {
+    let lazyImages = document.querySelectorAll("img.lazy");
 
     if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
+        let lazyImageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.remove("lazy");
-                    lazyImage.style.visibility = "visible"; // Mostra l'immagine
-                    lazyImage.style.opacity = 1; // Imposta l'opacità a 1 per renderla visibile gradualmente
-                    lazyImageObserver.unobserve(lazyImage);
+                    let img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute("data-src");
+                    img.classList.remove("lazy");
+                    lazyImageObserver.unobserve(img);
                 }
             });
         });
 
-        lazyImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
-        });
+        lazyImages.forEach(img => lazyImageObserver.observe(img));
     } else {
-        // Gestione fallback per browser senza Intersection Observer
+        // Fallback per browser più vecchi
+        lazyImages.forEach(img => img.src = img.dataset.src);
     }
 });
 
@@ -97,67 +95,43 @@ document.querySelectorAll('#gallery img').forEach((img, index) => {
 // gallery animation
 
 document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
+    if (typeof gsap !== "undefined") {
+        gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".project-card", {
-        opacity: 0,
-        y: 50, 
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: ".scroll-start",
-            // markers:true, 
-            start: "top 85%", // L'animazione parte quando il top della sezione entra nell'85% della viewport
-            toggleActions: "play none none none",
-            once: true, // Assicura che l'animazione non si ripeta quando si torna su
-        },
-    });
-    document.querySelectorAll(".animate-fade-up").forEach((element, index) => {
-        gsap.from(element, {
+        // Animazione per i project card
+        gsap.from(".project-card", {
             opacity: 0,
-            y: 50,
+            y: 50, 
             duration: 0.8,
+            stagger: 0.2,
             ease: "power2.out",
-            delay: index * 0.1, // Ritardo progressivo (effetto a cascata)
             scrollTrigger: {
-                trigger: element,
+                trigger: ".scroll-start",
                 start: "top 85%",
                 toggleActions: "play none none none",
                 once: true,
             },
         });
-    });
 
-    document.querySelectorAll(".animate-fade-right").forEach((element, index) => {
-        gsap.from(element, {
-            opacity: 0,
-            x: 100,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: element,
-                start: "top 85%",
-                toggleActions: "play none none none",
-                once: true,
-            },
-        });
-    });
+        // Funzione per animare gruppi di elementi
+        const animateElements = (selector, animationProps) => {
+            gsap.utils.toArray(selector).forEach((element, index) => {
+                gsap.from(element, {
+                    ...animationProps,
+                    delay: index * 0.1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: "top 85%",
+                        toggleActions: "play none none none",
+                        once: true,
+                    },
+                });
+            });
+        };
 
-    document.querySelectorAll(".animate-fade-left").forEach((element, index) => {
-        gsap.from(element, {
-        opacity: 0,
-        x: -100, 
-        duration: 0.8,
-        stagger: 0.2, // Ritardo tra gli elementi
-        ease: "power2.out",
-        scrollTrigger: {
-            // markers:true, 
-            trigger: element,
-            start: "top 85%", // L'animazione parte quando l'elemento entra nel 85% della viewport
-            toggleActions: "play none none none",
-            once: true, // L'animazione avviene solo una volta
-            },
-        });
-    });
+        // Vari tipi di animazioni
+        animateElements(".animate-fade-up", { opacity: 0, y: 50, duration: 0.8, ease: "power2.out" });
+        animateElements(".animate-fade-right", { opacity: 0, x: 100, duration: 1, ease: "power2.out" });
+        animateElements(".animate-fade-left", { opacity: 0, x: -100, duration: 0.8, ease: "power2.out" });
+    }
 });
