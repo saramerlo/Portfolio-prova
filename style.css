@@ -477,7 +477,7 @@ font-family: var(--primary-font);
 color: var(--dark-text-secondary);
 }
 
-#gallery{
+.gallery-zoom{
     cursor: zoom-in;
 }
 
