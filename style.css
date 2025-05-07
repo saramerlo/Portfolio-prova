@@ -171,7 +171,7 @@ padding: 1rem 8rem;
     display: flex;
 }
 
-.btn-dark:hover, .btn-darkest:hover{
+.btn-dark:hover, .btn-darkest:hover, .cta:hover{
     background-color: #5b5b5b!important;
     color: var(--btn-dark-text);
 }
