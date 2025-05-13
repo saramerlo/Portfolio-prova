@@ -171,7 +171,7 @@ padding: 1rem 8rem;
     display: flex;
 }
 
-.btn-dark:hover, .btn-darkest:hover, .cta:hover{
+.btn-dark:hover, .btn-darkest:hover{
     background-color: #5b5b5b!important;
     color: var(--btn-dark-text);
 }
@@ -195,7 +195,7 @@ padding: 1rem 8rem;
     background-color: var(--btn-light)!important;
     color: var(--btn-light-text)!important;
 }
-.btn-light:hover{
+.btn-light:hover, .cta{
     background-color: var(--dark-text-secondary)!important;
 }
 
