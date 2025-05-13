@@ -195,7 +195,7 @@ padding: 1rem 8rem;
     background-color: var(--btn-light)!important;
     color: var(--btn-light-text)!important;
 }
-.btn-light:hover, .cta{
+.btn-light:hover, .cta:hover{
     background-color: var(--dark-text-secondary)!important;
 }
 
