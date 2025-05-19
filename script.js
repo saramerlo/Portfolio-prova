@@ -93,15 +93,16 @@ document.querySelectorAll('#gallery img').forEach((img, index) => {
 
 
 // gallery animation
-
 document.addEventListener("DOMContentLoaded", function () {
-    if (typeof gsap !== "undefined") {
+    const isDesktop = window.innerWidth >= 768; // puoi regolare la soglia
+
+    if (typeof gsap !== "undefined" && isDesktop) {
         gsap.registerPlugin(ScrollTrigger);
 
         // Animazione per i project card
         gsap.from(".project-card", {
             opacity: 0,
-            y: 50, 
+            y: 50,
             duration: 0.8,
             stagger: 0.2,
             ease: "power2.out",
